@@ -2,8 +2,8 @@ package com.ddt.samplecodes.collections
 
 fun main() {
     retrieveFromMap()
-    filterAndModifyMap()
-    writeAndRemoveFromMap()
+//    filterAndModifyMap()
+//    writeAndRemoveFromMap()
 }
 
 fun retrieveFromMap() {

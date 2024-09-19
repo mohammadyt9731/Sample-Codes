@@ -1,14 +1,11 @@
 fun main() {
-    // Uncomment each section to test the individual examples
-
-    // retrieveByPositionSampleCodes()
-    // retrieveByConditionSampleCodes()
-    // retrieveWithSelectorSampleCodes()
-    // randomElementSampleCodes()
-    checkElementExistenceSampleCodes()
+    retrieveByPositionSampleCodes()
+//    retrieveByConditionSampleCodes()
+//    retrieveWithSelectorSampleCodes()
+//    randomElementSampleCodes()
+//    checkElementExistenceSampleCodes()
 }
 
-// Retrieve by position
 fun retrieveByPositionSampleCodes() {
     val numbers = listOf("one", "two", "three", "four", "five")
 
@@ -25,7 +22,6 @@ fun retrieveByPositionSampleCodes() {
     println("Element at index 10 or else: " + numbers.elementAtOrElse(10) { "Unknown" })
 }
 
-// Retrieve by condition
 fun retrieveByConditionSampleCodes() {
     val numbers = listOf("one", "two", "three", "four", "five")
 
@@ -48,7 +44,6 @@ fun retrieveByConditionSampleCodes() {
     println("First element matching condition or null: " + numbers.firstNotNullOfOrNull { it.length == 3 })
 }
 
-// Retrieve with selector
 fun retrieveWithSelectorSampleCodes() {
     val numbers = listOf("one", "two", "three", "four", "five")
 
@@ -65,7 +60,6 @@ fun retrieveWithSelectorSampleCodes() {
     println("Last element or null: " + numbers.lastOrNull())
 }
 
-// Random element
 fun randomElementSampleCodes() {
     val numbers = listOf("one", "two", "three", "four", "five")
 
@@ -76,7 +70,6 @@ fun randomElementSampleCodes() {
     println("Random element or null: " + numbers.randomOrNull())
 }
 
-// Check element existence
 fun checkElementExistenceSampleCodes() {
     val numbers = listOf("one", "two", "three", "four", "five")
 

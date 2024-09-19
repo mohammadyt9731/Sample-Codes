@@ -1,10 +1,9 @@
 fun main() {
     addElements()
-    removeSingleElements()
-    removeMultipleElements()
+//    removeSingleElements()
+//    removeMultipleElements()
 }
 
-// Part 1: Adding elements to lists
 fun addElements() {
     val numbers = mutableListOf(1, 2, 3, 4)
 
@@ -24,7 +23,6 @@ fun addElements() {
     println(stringNumbers)
 }
 
-// Part 2: Removing single elements
 fun removeSingleElements() {
     val stringNumbers = mutableListOf("one", "two", "three", "four", "five")
 
@@ -44,7 +42,6 @@ fun removeSingleElements() {
     numbers.removeLastOrNull().also { println(numbers) }
 }
 
-// Part 3: Removing multiple elements
 fun removeMultipleElements() {
     val numbers = mutableListOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
 

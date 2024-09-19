@@ -1,17 +1,26 @@
 fun main() {
     orderingBySorting()
-    orderingByReversingAndShuffling()
+//    orderingByReversingAndShuffling()
 }
 
-// Part 1: Ordering by sorting
 fun orderingBySorting() {
     val lengthComparator = Comparator { str1: String, str2: String -> str1.length - str2.length }
 
     // Sorting by custom comparator
-    println("Sorted by length using Comparator: " + listOf("aaa", "bb", "c").sortedWith(lengthComparator))
+    println(
+        "Sorted by length using Comparator: " + listOf("aaa", "bb", "c").sortedWith(
+            lengthComparator
+        )
+    )
 
     // Sorting using compareBy
-    println("Sorted by length using compareBy: " + listOf("aaa", "bb", "c").sortedWith(compareBy { it.length }))
+    println(
+        "Sorted by length using compareBy: " + listOf(
+            "aaa",
+            "bb",
+            "c"
+        ).sortedWith(compareBy { it.length })
+    )
 
     val numbers = listOf("one", "two", "three", "four")
 
@@ -25,7 +34,6 @@ fun orderingBySorting() {
     println("Sorted by length using sortedWith: ${numbers.sortedWith(compareBy { it.length })}")
 }
 
-// Part 2: Ordering by reversing and shuffling
 fun orderingByReversingAndShuffling() {
     val numbers = listOf("one", "two", "three", "four")
 

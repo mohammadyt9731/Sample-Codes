@@ -1,10 +1,9 @@
 package com.ddt.samplecodes.collections
 
 fun main() {
-
     retrieveElementsAndParts()
-    findElementPositions()
-    binarySearchAndWriteOperations()
+//    findElementPositions()
+//    binarySearchAndWriteOperations()
 }
 
 fun retrieveElementsAndParts() {

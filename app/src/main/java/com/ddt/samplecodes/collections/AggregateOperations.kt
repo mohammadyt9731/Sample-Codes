@@ -1,11 +1,10 @@
 fun main() {
     aggregateBasicOperations()
-    aggregateMinMaxOperations()
-    reduceAndFoldOperations()
-    runningReduceAndFoldOperations()
+//    aggregateMinMaxOperations()
+//    reduceAndFoldOperations()
+//    runningReduceAndFoldOperations()
 }
 
-// Part 1: Basic Aggregate Operations (Count, Average, Sum)
 fun aggregateBasicOperations() {
     val numbers = listOf(6, 42, 10, 4)
 
@@ -22,7 +21,6 @@ fun aggregateBasicOperations() {
     println("Sum of doubled elements: ${numbers.sumOf { it * 2 }}")
 }
 
-// Part 2: Min, Max, and related operations
 fun aggregateMinMaxOperations() {
     val numbers = listOf(6, 42, 10, 4)
 
@@ -51,7 +49,6 @@ fun aggregateMinMaxOperations() {
     println("MinOfWithOrNull: ${numbers.minOfWithOrNull(compareBy { it < 10 }) { it * 2 }}")
 }
 
-// Part 3: Reduce and Fold operations
 fun reduceAndFoldOperations() {
     val numbers = listOf(6, 42, 10, 4)
 
@@ -72,7 +69,6 @@ fun reduceAndFoldOperations() {
     println("Folded right with index: ${numbers.foldRightIndexed(0) { idx, sum, element -> if (idx % 2 == 0) sum + element else sum }}")
 }
 
-// Part 4: Running reduce and fold operations
 fun runningReduceAndFoldOperations() {
     val numbers = listOf(6, 42, 10, 4)
 

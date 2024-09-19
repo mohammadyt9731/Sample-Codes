@@ -1,8 +1,8 @@
 fun main() {
-//    sliceSampleCodes()
+    sliceSampleCodes()
 //    takeAndDropSampleCodes()
 //    chunkedSampleCodes()
-    windowedSampleCodes()
+//    windowedSampleCodes()
 }
 
 fun sliceSampleCodes() {
@@ -75,7 +75,13 @@ fun windowedSampleCodes() {
     println("Windowed size 3 with step 2: " + numbers.windowed(3, step = 2))
 
     // Create sliding windows allowing partial windows
-    println("Windowed size 3 with step 2 and partial windows: " + numbers.windowed(3, step = 2, partialWindows = true))
+    println(
+        "Windowed size 3 with step 2 and partial windows: " + numbers.windowed(
+            3,
+            step = 2,
+            partialWindows = true
+        )
+    )
 
     // Create sliding windows and join each window to a string
     println("Windowed size 3 with string transformation: " + numbers.windowed(3) { it.joinToString() })

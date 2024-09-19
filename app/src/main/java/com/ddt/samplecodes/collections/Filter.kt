@@ -1,12 +1,12 @@
 package com.ddt.samplecodes.collections
 
 fun main() {
-//    filterSampleCodes()
+    filterByPredicateSampleCodes()
 //    partitionSampleCodes()
-    testPredicatesSampleCodes()
+//    testPredicatesSampleCodes()
 }
 
-fun FilterByPredicateSampleCodes() {
+fun filterByPredicateSampleCodes() {
     val numbers = listOf("one", "two", "three", "four")
 
     // Filter strings with length greater than 3
@@ -27,7 +27,11 @@ fun FilterByPredicateSampleCodes() {
     val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key11" to 11)
 
     // Filter map where keys end with '1' and values are greater than 10
-    println("Filtered map (key ends with '1', value > 10): " + numbersMap.filter { (key, value) -> key.endsWith("1") && value > 10 })
+    println("Filtered map (key ends with '1', value > 10): " + numbersMap.filter { (key, value) ->
+        key.endsWith(
+            "1"
+        ) && value > 10
+    })
 
     // Filter map by keys with length less than 4
     println("Filtered map by keys (length < 4): " + numbersMap.filterKeys { it.length < 4 })

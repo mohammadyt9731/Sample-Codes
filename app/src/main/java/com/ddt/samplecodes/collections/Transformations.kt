@@ -1,9 +1,9 @@
 fun main() {
-//    mapSampleCodes()
-     zipSampleCodes()
-    // associateSampleCodes()
-    // flattenSampleCodes()
-    // stringRepresentationSampleCodes()
+    mapSampleCodes()
+//    zipSampleCodes()
+//    associateSampleCodes()
+//    flattenSampleCodes()
+//    stringRepresentationSampleCodes()
 }
 
 fun mapSampleCodes() {
@@ -24,7 +24,7 @@ fun mapSampleCodes() {
     println("mapIndexed: " + numbers.mapIndexed { index, i -> "\"$index:$i\"" })
 
     // Mapping with index without null values
-    println("mapIndexedNotNull: " + numbers.mapIndexedNotNull { index, i ->  "\"$index:$i\"" })
+    println("mapIndexedNotNull: " + numbers.mapIndexedNotNull { index, i -> "\"$index:$i\"" })
 
     val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key11" to 11)
 

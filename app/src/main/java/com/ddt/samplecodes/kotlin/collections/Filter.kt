@@ -1,4 +1,4 @@
-package com.ddt.samplecodes.collections
+package com.ddt.samplecodes.kotlin.collections
 
 fun main() {
     filterByPredicateSampleCodes()
